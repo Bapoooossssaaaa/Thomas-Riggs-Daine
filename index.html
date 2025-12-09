@@ -9,6 +9,7 @@
     
     <style>
         :root {
+            /* Using raw.githubusercontent.com for reliable hosting */
             --sys-a-bg: url('https://raw.githubusercontent.com/Bapoooossssaaaa/WLOC/main/Untitled%20design%20(5).gif');
             --sys-a-overlay: url('https://raw.githubusercontent.com/Bapoooossssaaaa/WLOC/main/Untitled%20design%20(27).png');
             --sys-a-color: #e0e0e0;
@@ -26,9 +27,10 @@
 
         * { box-sizing: border-box; margin: 0; padding: 0; user-select: none; }
 
+        /* Scrollbar Fixes */
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #222; }
-        ::-webkit-scrollbar-thumb { background: #fff; }
+        ::-webkit-scrollbar-thumb { background: #fff; border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: #ccc; }
 
         body {
@@ -333,7 +335,7 @@
         <div id="a-file-screen" class="screen">
             <div class="a-top-bar a-file-top">
                 <div class="bar-left">
-                    <img src="https://raw.githubusercontent.com/Bapoooossssaaaa/OC_KIERAN/main/small-removebg-preview%20(1).png" style="height:30px; margin-right:10px; filter: brightness(0) grayscale(100%);" onerror="this.style.display='none'">
+                    <img src="https://raw.githubusercontent.com/Bapoooossssaaaa/OC_KIERAN/main/small-removebg-preview%20(1).png" style="height:30px; margin-right:10px; filter: brightness(0);" onerror="this.style.display='none'">
                     PERSONNEL DOSSIER VIEW
                 </div>
                 <div class="time-display" id="time-4">00:00:00</div>
@@ -372,7 +374,8 @@
                             <div class="d-lbl">NAME:</div><div class="d-val">Thomas “Riggs” Daine</div>
                             <div class="d-lbl">CODENAME:</div><div class="d-val">Riggs</div>
                             <div class="d-lbl">CLEARANCE:</div><div class="d-val">Provisional Level III (Task Force Operations Only)</div>
-                            <div class="d-lbl">AGE:</div><div class="d-val">26</div>
+                            <div class="d-lbl">AGE:</div><div class="d-val">27</div>
+                            <div class="d-lbl">DATE OF HIRE:</div><div class="d-val">November 12, 2022</div>
                             <div class="d-lbl">ROLE:</div><div class="d-val">Automatic Rifleman / Squad Support</div>
                             <div class="d-lbl">HANDLER:</div><div class="d-val" style="color:var(--mtf-orange);">[UNASSIGNED]</div>
                             <div class="d-lbl">PREV. HANDLER:</div><div class="d-val">Agent A. Leon (Internal Security Department)</div>
@@ -414,6 +417,10 @@
 
                     <div id="tab-serv" class="tab-content">
                         <h2>Field Operations Log</h2>
+
+                        <div style="margin-bottom: 2rem; border-left: 3px solid #666; padding-left: 15px; color: #444; font-style: italic; background: rgba(0,0,0,0.02); padding: 10px;">
+                            <p>Shortly after the raid and Thomas’ subsequent cooperation and remand into Foundation custody, Agents reviewed his recovered files and expertise. He was offered a position in Sigma-66, though with strict rules regarding his enlistment. Thomas was fitted with a Class-IV Shock Collar; removal is strictly prohibited and considered near impossible, as any attempt results in a painful shock rendering him comatose. The same consequence applies if he disobeys protocol or leaves a designated holding area, which also emits a generic radio frequency signal to summon operatives for detainment. Thomas, along with other captives, underwent rigorous training by officers from various Mobile Task Forces to ensure combat capability and recontainment proficiency. This regimen, which included training on Foundation equipment and vehicles, spanned over a year and a half.</p>
+                        </div>
 
                         <div class="log-entry">
                             <div class="log-meta">
